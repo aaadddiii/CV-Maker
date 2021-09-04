@@ -10,12 +10,13 @@ class App extends Component{
     data: null
   }
   async fetchData(username){
-    const data = await fetch('https://api.github.com/users/aaadddiii')
+    const data = await fetch('https://api.github.com/users/' + username)
     // this.setState({data})
     let githubData = await data.json()
     this.setState({
       data : githubData
     })
+    console.log(this.state.data)
   }
   getUsername = (username) =>{
     console.log(username)

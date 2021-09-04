@@ -6,20 +6,20 @@ function CV(props){
                 <div class="container">
         <div class="header">
             <div class="full-name">
-            <span class="first-name">{props.name}</span> 
+            <span class="first-name">{props.data.name}</span> 
             {/* <span class="last-name">Last Name</span> */}
             </div>
             <div class="contact-info">
-            <span class="email">Email: </span>
+            {/* <span class="email">Email: </span>
             <span class="email-val">john.doe@gmail.com</span>
-            <span class="separator"></span>
-            <span class="phone">Github </span>
-            <span class="phone-val">https://github.com/aaadddiii</span>
+            <span class="separator"></span> */}
+            {/* <span class="phone">Github </span>
+            <span class="phone-val">https://github.com/aaadddiii</span> */}
             </div>
             
             <div class="about">
             <span class="desc">
-                bio 
+            {props.data.bio }
             </span>
             </div>
         </div>

@@ -3,6 +3,7 @@ import React, {Component} from "react";
 import {Link} from 'react-router-dom'
 import CV from './CV';
 
+
 class Home extends Component{
     state = {
         username : null
@@ -29,14 +30,14 @@ class Home extends Component{
                 </div>
                 <br/>
                 <div className ="form-group">
-                <Link to="/resume">
                 <button className="btn btn-danger btn-block" type="button" onClick={this.onSubmit}>
-                <Link to="/resume">
-                    <a type="button">
-                        Click Me!
-                    </a>
-                </Link>
+                    Make CV
                 </button>
+                <br/>
+                <br/>
+                <br/>
+                <Link to="/resume">
+                <button>Preview</button>
                 </Link>
                 </div>
             </form>

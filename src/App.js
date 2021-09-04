@@ -16,13 +16,11 @@ class App extends Component{
     this.setState({
       data : githubData
     })
-    this.props.history.push('/resume')
   }
   getUsername = (username) =>{
-    
     console.log(username)
     this.fetchData(username)
-    
+
   }
 
   render(){

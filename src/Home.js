@@ -29,9 +29,15 @@ class Home extends Component{
                 </div>
                 <br/>
                 <div className ="form-group">
-                <button className="btn btn-danger btn-block" onClick={this.onSubmit}>
-                    Search User
+                <Link to="/resume">
+                <button className="btn btn-danger btn-block" type="button" onClick={this.onSubmit}>
+                <Link to="/resume">
+                    <a type="button">
+                        Click Me!
+                    </a>
+                </Link>
                 </button>
+                </Link>
                 </div>
             </form>
             <div id="result"></div>

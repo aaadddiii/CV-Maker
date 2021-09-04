@@ -1,12 +1,12 @@
 import React from "react";
 
-function CV(){
+function CV(props){
     return (
             <div>
                 <div class="container">
         <div class="header">
             <div class="full-name">
-            <span class="first-name">first Name</span> 
+            <span class="first-name">{props.name}</span> 
             {/* <span class="last-name">Last Name</span> */}
             </div>
             <div class="contact-info">

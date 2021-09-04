@@ -1,15 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, {Component} from "react";
-
+import {Link} from 'react-router-dom'
+import CV from './CV';
 
 class Home extends Component{
     state = {
         username : null
     }
-    handleChange = (e) =>{
+    handleChange = (username) =>{
         this.setState({
-            username: e.target.value
+            username: username.target.value
         })
+    }
+    onSubmit = (e) =>{
+        e.preventDefault();
+        this.props.getUsername(this.state.username)
     }
     render(){
         return (
@@ -20,13 +25,13 @@ class Home extends Component{
             </h1>
             <form id="myForm" autocomplete="off">
                 <div className="form-group"> 
-                    <input className="form-control" type="text" id="search" placeholder="Search Username" required onChange={this.handleChange}/>
+                    <input className="form-control" type="text" id="search" placeholder="Enter Username" required onChange={this.handleChange}/>
                 </div>
                 <br/>
                 <div className ="form-group">
-                    <button className="btn btn-danger btn-block" onClick={this.props.onSubmit}>
-                        Search User
-                    </button>
+                <button className="btn btn-danger btn-block" onClick={this.onSubmit}>
+                    Search User
+                </button>
                 </div>
             </form>
             <div id="result"></div>

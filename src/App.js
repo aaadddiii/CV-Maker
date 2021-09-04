@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component,useState,useEffect } from 'react'
 import './App.css'
 import CV from './CV';
 import Home from './Home';
@@ -6,20 +6,32 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 
 class App extends Component{
-  onSubmit = (e) => {
-    e.preventDefault();
-    let username = e.target.value;
-    console.log(username)
+  state = {
+    data: null
   }
+  async fetchData(username){
+    const data = await fetch('https://api.github.com/users/aaadddiii')
+    // this.setState({data})
+    let githubData = await data.json()
+    this.setState({
+      data : githubData
+    })
+    this.props.history.push('/resume')
+  }
+  getUsername = (username) =>{
+    
+    console.log(username)
+    this.fetchData(username)
+    
+  }
+
   render(){
     return (
-      <div>
+      <div className="App">
         <Router>
-         <div className="App">
            <Nav />
-           <Home onSubmit={this.onSubmit}/>
-           <Route path='/resume' component={CV}/>
-         </div>
+           <Route path='/resume' exact render={() => <CV data={this.state.data}/>}/>
+           <Route path='/' exact render={() => <Home getUsername={this.getUsername}/>} />
        </Router>
       </div>
     );

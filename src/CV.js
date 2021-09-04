@@ -6,8 +6,8 @@ function CV(){
                 <div class="container">
         <div class="header">
             <div class="full-name">
-            <span class="first-name">First Name</span> 
-            <span class="last-name">Last Name</span>
+            <span class="first-name">first Name</span> 
+            {/* <span class="last-name">Last Name</span> */}
             </div>
             <div class="contact-info">
             <span class="email">Email: </span>

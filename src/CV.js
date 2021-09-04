@@ -28,8 +28,8 @@ function CV(props){
             <div class="section__title">Projects </div> 
             <div class="section__list">
                 <div class="section__list-item">
-                <div class="name">Name of the repo DSP</div>
-                <div class="text">Description of the repository  I am a front-end developer with more than 3 years of experience writing html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented company with opportunity to grow.</div>
+                <div class="name">Google clone</div>
+                <div class="text">I made a clone of google</div>
                 </div>
                 
                 <div class="section__list-item">
@@ -52,7 +52,7 @@ function CV(props){
                     <label for="ck1"></label>
                                 <input id="ck2" type="checkbox" checked/>
 
-                    <label for="ck2"></label>~
+                    <label for="ck2"></label>
                                 <input id="ck3" type="checkbox" />
 
                     <label for="ck3"></label>

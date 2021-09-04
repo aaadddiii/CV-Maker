@@ -11,7 +11,7 @@ function CV(){
             </div>
             <div class="contact-info">
             <span class="email">Email: </span>
-            <span class="email-val"> if email, then email else nothing john.doe@gmail.com</span>
+            <span class="email-val">john.doe@gmail.com</span>
             <span class="separator"></span>
             <span class="phone">Github </span>
             <span class="phone-val">https://github.com/aaadddiii</span>
@@ -19,13 +19,13 @@ function CV(){
             
             <div class="about">
             <span class="desc">
-                gonna use bio here 
+                bio 
             </span>
             </div>
         </div>
         <div class="details">
             <div class="section">
-            <div class="section__title">Projects Latest 5 repositories</div> 
+            <div class="section__title">Projects </div> 
             <div class="section__list">
                 <div class="section__list-item">
                 <div class="name">Name of the repo DSP</div>
@@ -40,7 +40,7 @@ function CV(){
             </div>
             </div>
             <div class="section">
-            <div class="section__title">Skills languages ellaam edthit make an algorithm to fill the rating</div>
+            <div class="section__title">Skills</div>
             <div class="skills">
                 <div class="skills__item">
                 <div class="left"><div class="name">
